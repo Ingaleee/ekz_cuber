@@ -24,3 +24,7 @@ curl http://localhost:8080
 ```
 
 The response must contain the `exam-web` HTML page from the `ConfigMap` with student information and application version `v1`.
+
+## Screenshot
+
+![Exam page screenshot](assets/exam-page-screenshot.png)
