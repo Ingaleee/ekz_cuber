@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: exam-web-service
+  namespace: exam-k8s
+  labels:
+    app: exam-web
+spec:
+  type: ClusterIP
+  selector:
+    app: exam-web
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 80
